@@ -7,10 +7,12 @@ root=Tk()
 root.title("generate Password")
 root.geometry("600x500")
 
-def gener():
+def genere():
     lent=int(spin_box.get())
     password.delete(0,END)
     password.insert(0,generate_password(lent))
+
+
  
 fenetre=Frame(root ,bg="#b02750",width=600,height=500)
 fenetre.pack()
@@ -38,11 +40,11 @@ fenetre2.pack(padx=100 ,pady=60)
 password=Entry(fenetre2,font=("Arial",15),bg="green",fg="white")
 password.pack()
 
-generer=Button(fenetre,text="Generate",font=("Arial",15),bg="green",fg="white",command=lambda:gener())
+generer=Button(fenetre,text="Generate",font=("Arial",15),bg="green",fg="white",command=lambda:genere())
 generer.pack()
 
-copy=Button(fenetre2,text="Copy",font=("Arial",8),bg="white",fg="black",command=lambda:root.clipboard_clear())
-copy.pack()
+
+
 
 
 

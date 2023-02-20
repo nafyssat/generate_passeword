@@ -8,5 +8,5 @@ def generate_password(lent):
     # get the password
     password = ""
     for i in range(lent):
-        password += random.choice(string.ascii_letters + string.digits + string.punctuation)
+        password += random.choice(string.ascii_letters + string.digits)
     return password
